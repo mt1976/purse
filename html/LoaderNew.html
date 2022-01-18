@@ -1,0 +1,59 @@
+  {{template "header" .}}
+
+<body>
+
+
+
+  <form method="GET" action="/genSvcDataMap">
+
+
+    <div class="container-fluid">
+
+
+      <div id="SrvConfig">
+        <div class="card">
+          <div class="card-header">
+{{.Title}}&nbsp;:&nbsp;<code>NEW</code>
+            <div class="btn-group float-right">
+              <button type="submit" value="" class="btn btn-outline-danger" formaction="/genSvcDataMap"><i class="fas fa-save" ></i>&nbsp;&nbsp;Create</button>
+              <button type="button" value="" class="btn btn-outline-secondary" method="POST" onclick="history.back()"><i class="fas fa-times" ></i>&nbsp;&nbsp;Cancel</button>
+
+            </div>
+          </div>
+          <div class="card-body">
+            <label for="name">Name :</label>
+            <input type="text" id="name" name="name" value="" size="20" width="20" class="form-control" placeholder="Enter the name of the DataMap">
+
+            <label for="descr">Description :</label>
+            <input type="text" id="descr" name="descr" size="60" class="form-control" placeholder="Enter a description/reason for the DataMap">
+            <div class="row">
+              <div class="col">
+            <label for="type" class="d-flex flex-column">Type :</label>
+            <select class="selectpicker form-select" id="Type" name="Type" mandatory="mandatory">
+              <option>transactional</option>
+              <option>static</option>
+            </select>
+            <small id="emailHelp" class="form-text text-muted">Select static for Static Data Import, or Transaction for Deal Import</small>
+            </div>
+            <div class="col">
+          <label for="type" class="d-flex flex-column">Instance :</label>
+          <select class="selectpicker form-select" id="Instance" name="Instance">
+            <option></option>
+            {{range .InstanceList}}<option>{{.Id}}</option>{{end}}
+          </select>
+          <small id="emailHelp" class="form-text text-muted">Select which instance to deliver data to</small>
+          </div>
+          <div class="col">
+            <label for="Extension">File Extension :</label>
+            <input type="text" id="Extension" name="Extension" value="" size="6" width="6" maxlength="5" class="form-control" placeholder=".xml">
+              <small id="emailHelp" class="form-text text-muted">Examples: .xml, .json etc. Leave blank for no file extension.</small>
+          </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </form>
+
+</body>

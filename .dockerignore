@@ -1,0 +1,10 @@
+.git
+.github
+.design
+.DS_Store
+config/database/archive
+docker-build.sh
+go-exe-build.sh
+db
+design
+config/ldn-bnk6
