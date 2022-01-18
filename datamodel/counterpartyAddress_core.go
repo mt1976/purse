@@ -6,7 +6,7 @@ package datamodel
 // Package              : application
 // Object 			    : CounterpartyAddress (counterpartyaddress)
 // Endpoint 	        : CounterpartyAddress (ID)
-// For Project          : github.com/mt1976/mwt-go-dev/
+// For Project          : github.com/mt1976/purse/
 // ----------------------------------------------------------------
 // Template Generator   : delinquentDysprosium [r4-21.12.31]
 // Date & Time		    : 12/12/2021 at 16:13:09
@@ -15,16 +15,14 @@ package datamodel
 
 //Centre is cheese
 type CounterpartyAddress struct {
-
-NameFirm        string
-NameCentre        string
-Address1        string
-Address2        string
-CityTown        string
-County        string
-Postcode        string
-CompID        string
-
+	NameFirm   string
+	NameCentre string
+	Address1   string
+	Address2   string
+	CityTown   string
+	County     string
+	Postcode   string
+	CompID     string
 }
 
 const (
@@ -53,14 +51,14 @@ const (
 	///
 	/// SQL Field Definitions
 	///
-	CounterpartyAddress_NameFirm   = "NameFirm" // NameFirm is a String
-	CounterpartyAddress_NameCentre   = "NameCentre" // NameCentre is a String
-	CounterpartyAddress_Address1   = "Address1" // Address1 is a String
-	CounterpartyAddress_Address2   = "Address2" // Address2 is a String
-	CounterpartyAddress_CityTown   = "CityTown" // CityTown is a String
-	CounterpartyAddress_County   = "County" // County is a String
-	CounterpartyAddress_Postcode   = "Postcode" // Postcode is a String
-	CounterpartyAddress_CompID   = "CompID" // CompID is a String
+	CounterpartyAddress_NameFirm   = "NameFirm"   // NameFirm is a String
+	CounterpartyAddress_NameCentre = "NameCentre" // NameCentre is a String
+	CounterpartyAddress_Address1   = "Address1"   // Address1 is a String
+	CounterpartyAddress_Address2   = "Address2"   // Address2 is a String
+	CounterpartyAddress_CityTown   = "CityTown"   // CityTown is a String
+	CounterpartyAddress_County     = "County"     // County is a String
+	CounterpartyAddress_Postcode   = "Postcode"   // Postcode is a String
+	CounterpartyAddress_CompID     = "CompID"     // CompID is a String
 
 	/// Definitions End
 )

@@ -6,7 +6,7 @@ package datamodel
 // Package              : application
 // Object 			    : Centre (centre)
 // Endpoint 	        : Centre (Code)
-// For Project          : github.com/mt1976/mwt-go-dev/
+// For Project          : github.com/mt1976/purse/
 // ----------------------------------------------------------------
 // Template Generator   : delinquentDysprosium [r4-21.12.31]
 // Date & Time		    : 12/12/2021 at 16:13:08
@@ -15,12 +15,10 @@ package datamodel
 
 //Centre is cheese
 type Centre struct {
-
-Code        string
-Name        string
-Country        string
-Country_Lookup        string
-
+	Code           string
+	Name           string
+	Country        string
+	Country_Lookup string
 }
 
 const (
@@ -49,10 +47,10 @@ const (
 	///
 	/// SQL Field Definitions
 	///
-	Centre_Code   = "Code" // Code is a String
-	Centre_Name   = "Name" // Name is a String
-	Centre_Country   = "Country" // Country is a String
-	Centre_Country_Lookup   = "Country_Lookup" // Country_Lookup is a String
+	Centre_Code           = "Code"           // Code is a String
+	Centre_Name           = "Name"           // Name is a String
+	Centre_Country        = "Country"        // Country is a String
+	Centre_Country_Lookup = "Country_Lookup" // Country_Lookup is a String
 
 	/// Definitions End
 )

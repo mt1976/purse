@@ -10,7 +10,7 @@ import (
 
 	"github.com/alexedwards/scs/v2"
 	"github.com/jimlawless/cfg"
-	"github.com/mt1976/mwt-go-dev/logs"
+	"github.com/mt1976/purse/logs"
 )
 
 var startTime = time.Now()
@@ -186,13 +186,7 @@ func Initialise() {
 
 	//SienaSystemDate DateItem
 	ApplicationProperties = getProperties(APPCONFIG)
-	SienaProperties = getProperties(SIENACONFIG)
-	SienaPropertiesDB = getProperties(SQLCONFIG)
 	ApplicationPropertiesDB = getProperties(DATASTORECONFIG)
-	InstanceProperties = getProperties(INSTANCECONFIG)
-	SienaTablesLookup = getProperties("sienaTables.cfg")
-	//MasterPropertiesDB = getProperties(DATASTORECONFIG)
-	//MasterPropertiesDB["database"] = "master"
 
 	IsChildInstance = false
 	if len(ApplicationPropertiesDB["instance"]) != 0 {
@@ -206,10 +200,6 @@ func Initialise() {
 
 	ApplicationDB, _ = Database_Connect(ApplicationPropertiesDB)
 	//log.Printf("Initialisation", ApplicationDB.Stats())
-
-	SienaDB, _ = Database_Connect(SienaPropertiesDB)
-	//log.Printf("Initialisation", SienaDB.Stats())
-	logs.Success("Connections established")
 
 	//
 
@@ -263,10 +253,6 @@ func fileExists(filename string) bool {
 		return false
 	}
 	return !info.IsDir()
-}
-
-func GetSienaClassName(inTableName string) string {
-	return SienaTablesLookup[strings.ToLower(inTableName)]
 }
 
 func PreInitialise() {

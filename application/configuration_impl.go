@@ -5,9 +5,9 @@ import (
 	"runtime"
 	"strings"
 
-	core "github.com/mt1976/mwt-go-dev/core"
-	dm "github.com/mt1976/mwt-go-dev/datamodel"
-	logs "github.com/mt1976/mwt-go-dev/logs"
+	core "github.com/mt1976/purse/core"
+	dm "github.com/mt1976/purse/datamodel"
+	logs "github.com/mt1976/purse/logs"
 )
 
 //AppConfigurationPage is cheese
@@ -44,7 +44,7 @@ type AppConfigurationPage struct {
 	AppCredentialsLife     string
 	AppSessionLife         string
 	AppDefaultSienaSystem  string
-	SienaSystems           []SystemStoreItem
+	SienaSystems           string
 	GoVersion              string
 	OS                     string
 }
@@ -107,18 +107,6 @@ func Configuration_HandlerView(w http.ResponseWriter, r *http.Request) {
 	pageAppConfigView.AppSessionLife = core.ApplicationProperties["sessionlife"]
 	pageAppConfigView.AppDefaultSienaSystem = core.SienaProperties["name"]
 
-	var sienaSystem SystemStoreItem
-	sienaSystem.Id = core.SienaProperties["id"]
-	sienaSystem.Name = core.SienaProperties["name"]
-	sienaSystem.Staticin = core.SienaProperties["static_in"]
-	sienaSystem.Staticout = core.SienaProperties["static_in"]
-	sienaSystem.Fundscheckin = core.SienaProperties["funds_in"]
-	sienaSystem.Fundscheckout = core.SienaProperties["funds_out"]
-	sienaSystem.Txnin = core.SienaProperties["transactional_in"]
-	sienaSystem.Txnout = core.SienaProperties["transactional_out"]
-	sienaSystem.Ratesin = core.SienaProperties["rates_in"]
-	sienaSystem.Ratesout = core.SienaProperties["rates_out"]
-	pageAppConfigView.SienaSystems = append(pageAppConfigView.SienaSystems, sienaSystem)
 	//	_, systems, _ := GetSystemStoreList()
 	//	pageAppConfigView.SienaSystems = systems
 

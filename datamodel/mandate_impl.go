@@ -6,7 +6,7 @@ package datamodel
 // Package              : application
 // Object 			    : Mandate (mandate)
 // Endpoint 	        : Mandate (Mandate)
-// For Project          : github.com/mt1976/mwt-go-dev/
+// For Project          : github.com/mt1976/purse/
 // ----------------------------------------------------------------
 // Template Generator   : cryptoidCalcium [r0-21.11.01]
 // Date & Time		    : 02/12/2021 at 16:29:34

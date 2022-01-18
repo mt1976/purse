@@ -16,7 +16,7 @@ import (
 	"time"
 
 	"github.com/leekchan/accounting"
-	"github.com/mt1976/mwt-go-dev/logs"
+	"github.com/mt1976/purse/logs"
 )
 
 // Converts a siena style date, as a user readable date

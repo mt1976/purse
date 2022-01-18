@@ -6,7 +6,7 @@ package datamodel
 // Package              : application
 // Object 			    : Sector (sector)
 // Endpoint 	        : Sector (Sector)
-// For Project          : github.com/mt1976/mwt-go-dev/
+// For Project          : github.com/mt1976/purse/
 // ----------------------------------------------------------------
 // Template Generator   : delinquentDysprosium [r4-21.12.31]
 // Date & Time		    : 12/12/2021 at 16:13:19
@@ -15,10 +15,8 @@ package datamodel
 
 //Centre is cheese
 type Sector struct {
-
-Code        string
-Name        string
-
+	Code string
+	Name string
 }
 
 const (
@@ -47,8 +45,8 @@ const (
 	///
 	/// SQL Field Definitions
 	///
-	Sector_Code   = "Code" // Code is a String
-	Sector_Name   = "Name" // Name is a String
+	Sector_Code = "Code" // Code is a String
+	Sector_Name = "Name" // Name is a String
 
 	/// Definitions End
 )

@@ -3,10 +3,10 @@ package jobs
 import (
 	"fmt"
 
-	application "github.com/mt1976/mwt-go-dev/application"
-	core "github.com/mt1976/mwt-go-dev/core"
-	dm "github.com/mt1976/mwt-go-dev/datamodel"
-	"github.com/mt1976/mwt-go-dev/logs"
+	application "github.com/mt1976/purse/application"
+	core "github.com/mt1976/purse/core"
+	dm "github.com/mt1976/purse/datamodel"
+	"github.com/mt1976/purse/logs"
 	"github.com/robfig/cron/v3"
 )
 
@@ -31,7 +31,6 @@ func HeartBeat_Run() {
 	logs.StartJob(HeartBeat_Job().Name)
 	core.Log_uptime()
 	core.ApplicationDB = core.Database_Poke(core.ApplicationDB, core.ApplicationPropertiesDB)
-	core.SienaDB = core.Database_Poke(core.SienaDB, core.SienaPropertiesDB)
 
 	message := fmt.Sprintf("Uptime = %v", core.Uptime())
 

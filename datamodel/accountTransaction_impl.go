@@ -6,7 +6,7 @@ package datamodel
 // Package              : application
 // Object 			    : AccountTransaction (accounttransaction)
 // Endpoint 	        : AccountTransaction (AccountNo)
-// For Project          : github.com/mt1976/mwt-go-dev/
+// For Project          : github.com/mt1976/purse/
 // ----------------------------------------------------------------
 // Template Generator   : cryptoidCalcium [r0-21.11.01]
 // Date & Time		    : 01/12/2021 at 20:36:36

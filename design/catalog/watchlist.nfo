@@ -1,0 +1,56 @@
+----------------------------------------------------------------
+Automatically generated  "/design/catalog/watchlist.nfo"
+----------------------------------------------------------------
+Package              : n/a
+Object 			     : Watchlist (watchlist)
+Endpoint 	         : Watchlist (Id)
+For Project          : github.com/mt1976/purse/
+----------------------------------------------------------------
+Template Generator   : delinquentDysprosium [r4-21.12.31]
+Date & Time		     : 18/01/2022 at 15:31:16
+Who & Where		     : matttownsend on silicon.local
+----------------------------------------------------------------
+Database Information
+----------------------------------------------------------------
+SQL Table Name       : watchlist
+SQL Table Search Col : id
+----------------------------------------------------------------
+Fields Generated
+----------------------------------------------------------------
+* Md  = Mandatory
+* Cr  = Core Fields
+* Ex  = Extra Fields
+* Ov  = Override of a Core Field
+* Lkp = Lookup Field
+*-------------------------------------+------------+------------+----+----+----+----+----+-----------------+--------------------------+--------------------------*
+| Field Name                          | Type       | Default    | Md | Cr | Ex | Ov | Lkp| Lkp Object      | Lkp Field Source         | Lkp Value                |  
+*-------------------------------------+------------+------------+----+----+----+----+----+-----------------+--------------------------+--------------------------*
+| SYSId                               | Int        | 0          | Y  | Y  |    |    |    |                 |                          |                          |
+| Id                                  | String     |            |    | Y  |    |    |    |                 |                          |                          |
+| Code                                | String     |            |    | Y  |    |    |    |                 |                          |                          |
+| Name                                | String     |            |    | Y  |    |    |    |                 |                          |                          |
+| Symbol                              | String     |            |    | Y  |    |    |    |                 |                          |                          |
+| Notes                               | String     |            |    | Y  |    |    |    |                 |                          |                          |
+| SYSCreated                          | String     |            |    | Y  |    |    |    |                 |                          |                          |
+| SYSUpdated                          | String     |            |    | Y  |    |    |    |                 |                          |                          |
+| SYSCreatedBy                        | String     |            |    | Y  |    |    |    |                 |                          |                          |
+| SYSCreatedHost                      | String     |            |    | Y  |    |    |    |                 |                          |                          |
+| SYSUpdatedBy                        | String     |            |    | Y  |    |    |    |                 |                          |                          |
+| SYSUpdatedHost                      | String     |            |    | Y  |    |    |    |                 |                          |                          |
+*-------------------------------------+------------+------------+----+----+----+----+----+-----------------+--------------------------+--------------------------*
+----------------------------------------------------------------
+Artifacts Generated
+----------------------------------------------------------------
+* application (/application/watchlist_core.go)
+* api (/application/watchlist_api.go)
+* dao (/dao/watchlist_core.go)
+* datamodel (/datamodel/watchlist_core.go)
+* menu (/design/menu/watchlist.json)
+* html -> List (/html/Watchlist_List.html)
+* html -> View (/html/Watchlist_View.html)
+* html -> Edit (/html/Watchlist_Edit.html)
+* html -> New (/html/Watchlist_New.html)
+* catalog (/design/catalog/watchlist.nfo)
+----------------------------------------------------------------
+End of File
+----------------------------------------------------------------

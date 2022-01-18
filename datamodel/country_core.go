@@ -6,7 +6,7 @@ package datamodel
 // Package              : application
 // Object 			    : Country (country)
 // Endpoint 	        : Country (Code)
-// For Project          : github.com/mt1976/mwt-go-dev/
+// For Project          : github.com/mt1976/purse/
 // ----------------------------------------------------------------
 // Template Generator   : delinquentDysprosium [r4-21.12.31]
 // Date & Time		    : 12/12/2021 at 16:13:10
@@ -15,13 +15,11 @@ package datamodel
 
 //Centre is cheese
 type Country struct {
-
-Code        string
-Name        string
-ShortCode        string
-EU_EEA        string
-HolidaysWeekend        string
-
+	Code            string
+	Name            string
+	ShortCode       string
+	EU_EEA          string
+	HolidaysWeekend string
 }
 
 const (
@@ -50,11 +48,11 @@ const (
 	///
 	/// SQL Field Definitions
 	///
-	Country_Code   = "Code" // Code is a String
-	Country_Name   = "Name" // Name is a String
-	Country_ShortCode   = "ShortCode" // ShortCode is a String
-	Country_EU_EEA   = "EU_EEA" // EU_EEA is a Bool
-	Country_HolidaysWeekend   = "HolidaysWeekend" // HolidaysWeekend is a String
+	Country_Code            = "Code"            // Code is a String
+	Country_Name            = "Name"            // Name is a String
+	Country_ShortCode       = "ShortCode"       // ShortCode is a String
+	Country_EU_EEA          = "EU_EEA"          // EU_EEA is a Bool
+	Country_HolidaysWeekend = "HolidaysWeekend" // HolidaysWeekend is a String
 
 	/// Definitions End
 )

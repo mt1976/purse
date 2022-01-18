@@ -9,8 +9,8 @@ import (
 	"os/user"
 	"time"
 
-	core "github.com/mt1976/mwt-go-dev/core"
-	dm "github.com/mt1976/mwt-go-dev/datamodel"
+	core "github.com/mt1976/purse/core"
+	dm "github.com/mt1976/purse/datamodel"
 )
 
 // Defines the Fields to Fetch from SQL

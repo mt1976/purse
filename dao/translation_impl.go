@@ -3,7 +3,7 @@ package dao
 import (
 	"strings"
 
-	core "github.com/mt1976/mwt-go-dev/core"
+	core "github.com/mt1976/purse/core"
 )
 
 // Returns a valid translation store ID

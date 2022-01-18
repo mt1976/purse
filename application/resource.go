@@ -3,7 +3,7 @@ package application
 import (
 	"net/http"
 
-	logs "github.com/mt1976/mwt-go-dev/logs"
+	logs "github.com/mt1976/purse/logs"
 )
 
 func Resources_Publish_Impl(mux http.ServeMux) {

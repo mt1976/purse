@@ -3,8 +3,8 @@ package application
 import (
 	"net/http"
 
-	core "github.com/mt1976/mwt-go-dev/core"
-	"github.com/mt1976/mwt-go-dev/logs"
+	core "github.com/mt1976/purse/core"
+	"github.com/mt1976/purse/logs"
 )
 
 //SQLInjection_Publish Publishes the endpoint

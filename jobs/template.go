@@ -16,10 +16,10 @@ package jobs
 // ----------------------------------------------------------------
 
 import (
-	application "github.com/mt1976/mwt-go-dev/application"
-	core "github.com/mt1976/mwt-go-dev/core"
-	dm "github.com/mt1976/mwt-go-dev/datamodel"
-	logs "github.com/mt1976/mwt-go-dev/logs"
+	application "github.com/mt1976/purse/application"
+	core "github.com/mt1976/purse/core"
+	dm "github.com/mt1976/purse/datamodel"
+	logs "github.com/mt1976/purse/logs"
 	cron "github.com/robfig/cron/v3"
 )
 

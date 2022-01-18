@@ -6,7 +6,7 @@ package datamodel
 // Package              : application
 // Object 			    : AccountLadder (accountladder)
 // Endpoint 	        : AccountLadder (AccountNo)
-// For Project          : github.com/mt1976/mwt-go-dev/
+// For Project          : github.com/mt1976/purse/
 // ----------------------------------------------------------------
 // Template Generator   : delinquentDysprosium [r4-21.12.31]
 // Date & Time		    : 12/12/2021 at 16:13:06
@@ -15,14 +15,12 @@ package datamodel
 
 //Centre is cheese
 type AccountLadder struct {
-
-SienaReference        string
-BusinessDate        string
-ContractNumber        string
-Balance        string
-DealtCcy        string
-AmountDp        string
-
+	SienaReference string
+	BusinessDate   string
+	ContractNumber string
+	Balance        string
+	DealtCcy       string
+	AmountDp       string
 }
 
 const (
@@ -51,12 +49,12 @@ const (
 	///
 	/// SQL Field Definitions
 	///
-	AccountLadder_SienaReference   = "SienaReference" // SienaReference is a String
-	AccountLadder_BusinessDate   = "BusinessDate" // BusinessDate is a Time
-	AccountLadder_ContractNumber   = "ContractNumber" // ContractNumber is a String
-	AccountLadder_Balance   = "Balance" // Balance is a Float
-	AccountLadder_DealtCcy   = "DealtCcy" // DealtCcy is a String
-	AccountLadder_AmountDp   = "AmountDp" // AmountDp is a Int
+	AccountLadder_SienaReference = "SienaReference" // SienaReference is a String
+	AccountLadder_BusinessDate   = "BusinessDate"   // BusinessDate is a Time
+	AccountLadder_ContractNumber = "ContractNumber" // ContractNumber is a String
+	AccountLadder_Balance        = "Balance"        // Balance is a Float
+	AccountLadder_DealtCcy       = "DealtCcy"       // DealtCcy is a String
+	AccountLadder_AmountDp       = "AmountDp"       // AmountDp is a Int
 
 	/// Definitions End
 )

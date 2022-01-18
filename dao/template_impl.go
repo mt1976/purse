@@ -1,6 +1,6 @@
 package dao
 
-import dm "github.com/mt1976/mwt-go-dev/datamodel"
+import dm "github.com/mt1976/purse/datamodel"
 
 func template_ExtraField_Extra(recItem dm.Template) string {
 	return "Extra"

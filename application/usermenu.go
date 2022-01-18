@@ -5,8 +5,8 @@ import (
 	"io/ioutil"
 	"net/http"
 
-	core "github.com/mt1976/mwt-go-dev/core"
-	dm "github.com/mt1976/mwt-go-dev/datamodel"
+	core "github.com/mt1976/purse/core"
+	dm "github.com/mt1976/purse/datamodel"
 )
 
 //AppMenuList is cheese

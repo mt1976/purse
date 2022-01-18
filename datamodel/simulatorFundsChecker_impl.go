@@ -8,7 +8,7 @@ import "encoding/xml"
 // Package              : application
 // Object 			    : Simulator_SienaFundsChecker (Simulator_SienaFundsChecker)
 // Endpoint 	        : Simulator_SienaFundsChecker (Code)
-// For Project          : github.com/mt1976/mwt-go-dev/
+// For Project          : github.com/mt1976/purse/
 // ----------------------------------------------------------------
 // Template Generator   : cryptoidCalcium [r0-21.11.01]
 // Date & Time		    : 22/11/2021 at 21:11:42

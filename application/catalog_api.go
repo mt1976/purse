@@ -6,7 +6,7 @@ package application
 // Package              : application
 // Object 			    : Catalog (catalog)
 // Endpoint 	        : Catalog (ID)
-// For Project          : github.com/mt1976/mwt-go-dev/
+// For Project          : github.com/mt1976/purse/
 // ----------------------------------------------------------------
 // Template Generator   : delinquentDysprosium [r4-21.12.31]
 // Date & Time		    : 12/12/2021 at 16:16:04
@@ -18,9 +18,9 @@ import (
 
 	"net/http"
 
-	core "github.com/mt1976/mwt-go-dev/core"
-	dao "github.com/mt1976/mwt-go-dev/dao"
-	dm "github.com/mt1976/mwt-go-dev/datamodel"
+	core "github.com/mt1976/purse/core"
+	dao "github.com/mt1976/purse/dao"
+	dm "github.com/mt1976/purse/datamodel"
 )
 
 //Catalog_Handler is the handler for the api calls

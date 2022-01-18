@@ -7,7 +7,7 @@ import (
 	"strings"
 	"time"
 
-	core "github.com/mt1976/mwt-go-dev/core"
+	core "github.com/mt1976/purse/core"
 )
 
 type SQLData struct {

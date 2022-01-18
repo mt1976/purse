@@ -6,7 +6,7 @@ package application
 // Package              : application
 // Object 			    : Schedule (schedule)
 // Endpoint 	        : Schedule (Schedule)
-// For Project          : github.com/mt1976/mwt-go-dev/
+// For Project          : github.com/mt1976/purse/
 // ----------------------------------------------------------------
 // Template Generator   : cryptoidCalcium [r0-21.11.01]
 // Date & Time		    : 21/11/2021 at 12:24:49
@@ -23,10 +23,10 @@ import (
 
 	"github.com/lnquy/cron"
 	hcron "github.com/lnquy/cron"
-	core "github.com/mt1976/mwt-go-dev/core"
-	dao "github.com/mt1976/mwt-go-dev/dao"
-	dm "github.com/mt1976/mwt-go-dev/datamodel"
-	logs "github.com/mt1976/mwt-go-dev/logs"
+	core "github.com/mt1976/purse/core"
+	dao "github.com/mt1976/purse/dao"
+	dm "github.com/mt1976/purse/datamodel"
+	logs "github.com/mt1976/purse/logs"
 )
 
 //Schedule_Publish annouces the endpoints available for this object

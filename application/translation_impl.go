@@ -3,8 +3,8 @@ package application
 import (
 	"log"
 
-	dao "github.com/mt1976/mwt-go-dev/dao"
-	dm "github.com/mt1976/mwt-go-dev/datamodel"
+	dao "github.com/mt1976/purse/dao"
+	dm "github.com/mt1976/purse/datamodel"
 )
 
 //Translation_Lookup  will translate a string from its source version to user-defined version.

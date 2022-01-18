@@ -6,7 +6,7 @@ package datamodel
 // Package              : application
 // Object 			    : CMNotes (cmnotes)
 // Endpoint 	        : CMNotes (ID)
-// For Project          : github.com/mt1976/mwt-go-dev/
+// For Project          : github.com/mt1976/purse/
 // ----------------------------------------------------------------
 // Template Generator   : delinquentDysprosium [r4-21.12.31]
 // Date & Time		    : 12/12/2021 at 16:13:08
@@ -15,15 +15,13 @@ package datamodel
 
 //Centre is cheese
 type CMNotes struct {
-
-NoteId        string
-StreamId        string
-Summary        string
-Details        string
-RecordState        string
-CreatedBy        string
-CreatedDateTime        string
-
+	NoteId          string
+	StreamId        string
+	Summary         string
+	Details         string
+	RecordState     string
+	CreatedBy       string
+	CreatedDateTime string
 }
 
 const (
@@ -52,13 +50,13 @@ const (
 	///
 	/// SQL Field Definitions
 	///
-	CMNotes_NoteId   = "noteId" // NoteId is a Int
-	CMNotes_StreamId   = "streamId" // StreamId is a Int
-	CMNotes_Summary   = "summary" // Summary is a String
-	CMNotes_Details   = "details" // Details is a String
-	CMNotes_RecordState   = "recordState" // RecordState is a Int
-	CMNotes_CreatedBy   = "createdBy" // CreatedBy is a String
-	CMNotes_CreatedDateTime   = "createdDateTime" // CreatedDateTime is a Time
+	CMNotes_NoteId          = "noteId"          // NoteId is a Int
+	CMNotes_StreamId        = "streamId"        // StreamId is a Int
+	CMNotes_Summary         = "summary"         // Summary is a String
+	CMNotes_Details         = "details"         // Details is a String
+	CMNotes_RecordState     = "recordState"     // RecordState is a Int
+	CMNotes_CreatedBy       = "createdBy"       // CreatedBy is a String
+	CMNotes_CreatedDateTime = "createdDateTime" // CreatedDateTime is a Time
 
 	/// Definitions End
 )

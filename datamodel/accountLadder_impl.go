@@ -6,7 +6,7 @@ package datamodel
 // Package              : application
 // Object 			    : AccountLadder (accountladder)
 // Endpoint 	        : AccountLadder (AccountNo)
-// For Project          : github.com/mt1976/mwt-go-dev/
+// For Project          : github.com/mt1976/purse/
 // ----------------------------------------------------------------
 // Template Generator   : cryptoidCalcium [r0-21.11.01]
 // Date & Time		    : 21/11/2021 at 19:48:01

@@ -6,7 +6,7 @@ package dao
 // Package            : dao
 // Object 			    : Schedule (schedule)
 // Endpoint 	        : Schedule (Schedule)
-// For Project          : github.com/mt1976/mwt-go-dev/
+// For Project          : github.com/mt1976/purse/
 // ----------------------------------------------------------------
 // Template Generator   : cryptoidCalcium [r0-21.11.01]
 // Date & Time		    : 21/11/2021 at 12:29:51
@@ -14,8 +14,8 @@ package dao
 // ----------------------------------------------------------------
 
 import (
-	core "github.com/mt1976/mwt-go-dev/core"
-	dm "github.com/mt1976/mwt-go-dev/datamodel"
+	core "github.com/mt1976/purse/core"
+	dm "github.com/mt1976/purse/datamodel"
 )
 
 func schedule_NewIDImpl(r dm.Schedule) string {

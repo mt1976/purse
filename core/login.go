@@ -4,7 +4,7 @@ import (
 	"html/template"
 	"net/http"
 
-	logs "github.com/mt1976/mwt-go-dev/logs"
+	logs "github.com/mt1976/purse/logs"
 )
 
 //loginPage is cheese

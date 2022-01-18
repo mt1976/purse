@@ -6,7 +6,7 @@ package datamodel
 // Package              : application
 // Object 			    : API (api)
 // Endpoint 	        : API (ID)
-// For Project          : github.com/mt1976/mwt-go-dev/
+// For Project          : github.com/mt1976/purse/
 // ----------------------------------------------------------------
 // Template Generator   : delinquentDysprosium [r4-21.12.31]
 // Date & Time		    : 12/12/2021 at 16:13:07
@@ -15,13 +15,11 @@ package datamodel
 
 //Centre is cheese
 type API struct {
-
-ID        string
-Endpoint        string
-Descr        string
-Query        string
-Source        string
-
+	ID       string
+	Endpoint string
+	Descr    string
+	Query    string
+	Source   string
 }
 
 const (
@@ -50,11 +48,11 @@ const (
 	///
 	/// SQL Field Definitions
 	///
-	API_ID   = "ID" // ID is a String
-	API_Endpoint   = "Endpoint" // Endpoint is a String
-	API_Descr   = "Descr" // Descr is a String
-	API_Query   = "Query" // Query is a String
-	API_Source   = "Source" // Source is a String
+	API_ID       = "ID"       // ID is a String
+	API_Endpoint = "Endpoint" // Endpoint is a String
+	API_Descr    = "Descr"    // Descr is a String
+	API_Query    = "Query"    // Query is a String
+	API_Source   = "Source"   // Source is a String
 
 	/// Definitions End
 )

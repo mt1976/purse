@@ -6,7 +6,7 @@ package datamodel
 // Package              : application
 // Object 			    : Broker (broker)
 // Endpoint 	        : Broker (Code)
-// For Project          : github.com/mt1976/mwt-go-dev/
+// For Project          : github.com/mt1976/purse/
 // ----------------------------------------------------------------
 // Template Generator   : delinquentDysprosium [r4-21.12.31]
 // Date & Time		    : 12/12/2021 at 16:13:07
@@ -15,14 +15,12 @@ package datamodel
 
 //Centre is cheese
 type Broker struct {
-
-Code        string
-Name        string
-FullName        string
-Contact        string
-Address        string
-LEI        string
-
+	Code     string
+	Name     string
+	FullName string
+	Contact  string
+	Address  string
+	LEI      string
 }
 
 const (
@@ -51,12 +49,12 @@ const (
 	///
 	/// SQL Field Definitions
 	///
-	Broker_Code   = "Code" // Code is a String
-	Broker_Name   = "Name" // Name is a String
-	Broker_FullName   = "FullName" // FullName is a String
-	Broker_Contact   = "Contact" // Contact is a String
-	Broker_Address   = "Address" // Address is a String
-	Broker_LEI   = "LEI" // LEI is a String
+	Broker_Code     = "Code"     // Code is a String
+	Broker_Name     = "Name"     // Name is a String
+	Broker_FullName = "FullName" // FullName is a String
+	Broker_Contact  = "Contact"  // Contact is a String
+	Broker_Address  = "Address"  // Address is a String
+	Broker_LEI      = "LEI"      // LEI is a String
 
 	/// Definitions End
 )

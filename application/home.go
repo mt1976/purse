@@ -5,13 +5,13 @@ import (
 	"os"
 	"time"
 
-	core "github.com/mt1976/mwt-go-dev/core"
-	dm "github.com/mt1976/mwt-go-dev/datamodel"
-	logs "github.com/mt1976/mwt-go-dev/logs"
+	core "github.com/mt1976/purse/core"
+	dm "github.com/mt1976/purse/datamodel"
+	logs "github.com/mt1976/purse/logs"
 )
 
 //sienaMandatedUserPage is cheese
-type sienaHomePage struct {
+type homePage struct {
 	UserMenu           []dm.AppMenuItem
 	UserNavi           string
 	UserRole           string
@@ -69,7 +69,7 @@ func Home_HandlerView(w http.ResponseWriter, r *http.Request) {
 	core.ServiceMessage(inUTL)
 	tmpHostname, _ := os.Hostname()
 
-	homePage := sienaHomePage{
+	homePage := homePage{
 		UserMenu:        UserMenu_Get(r),
 		UserRole:        Session_GetUserRole(r),
 		UserNavi:        "NOT USED",

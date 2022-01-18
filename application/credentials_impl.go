@@ -5,9 +5,9 @@ import (
 	"strconv"
 	"time"
 
-	core "github.com/mt1976/mwt-go-dev/core"
-	dao "github.com/mt1976/mwt-go-dev/dao"
-	dm "github.com/mt1976/mwt-go-dev/datamodel"
+	core "github.com/mt1976/purse/core"
+	dao "github.com/mt1976/purse/dao"
+	dm "github.com/mt1976/purse/datamodel"
 )
 
 func credentials_PublishImpl(mux http.ServeMux) http.ServeMux {

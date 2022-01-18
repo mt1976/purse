@@ -5,8 +5,8 @@ import (
 	"runtime"
 	"strings"
 
-	core "github.com/mt1976/mwt-go-dev/core"
-	"github.com/mt1976/mwt-go-dev/logs"
+	core "github.com/mt1976/purse/core"
+	"github.com/mt1976/purse/logs"
 
 	cron "github.com/robfig/cron/v3"
 )
@@ -32,36 +32,10 @@ func Start() {
 	HeartBeat_Register(c)
 
 	if !core.IsChildInstance {
-		RatesFXSpot_Register(c)
+		//		RatesFXSpot_Register(c)
 	}
-
-	if !core.IsChildInstance {
-		RatesFXECB_Register(c)
-	}
-	if !core.IsChildInstance {
-		IndexSONIABOE_Register(c)
-	}
-	if !core.IsChildInstance {
-		InstFRED_Register(c)
-	}
-
-	if !core.IsChildInstance {
-		InstFII_Register(c)
-	}
-
-	ExternalMessage_Register(c)
 
 	SessionHouseKeeping_Register(c)
-	DataDispatcher_Register(c, "MARKET", "*/10 6-21 * * 1-5")
-	DataDispatcher_Register(c, "EONIA", "35 17 * * 1-5")
-	DataDispatcher_Register(c, "SONIA", "35 11 * * 1-5")
-	DataDispatcher_Register(c, "SOFR", "35 17 * * 1-5")
-	DataDispatcher_Register(c, "ESTR", "35 17 * * 1-5")
-	DataDispatcher_Register(c, "TONAR", "35 17 * * 1-5")
-	DataDispatcher_Register(c, "ECB", "35 16 * * 1-5")
-	DataDispatcher_Register(c, "EURIBOR", "35 17 * * 1-5")
-	DataDispatcher_Register(c, "NI", "*/30 6-21 * * 1-5")
-	Rollover_Register(c)
 
 	c.Start()
 	//fmt.Println(len(c.Entries()))

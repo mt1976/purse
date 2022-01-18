@@ -5,9 +5,9 @@ import (
 	//"io/ioutil"
 	//"os"
 
-	"github.com/mt1976/mwt-go-dev/core"
-	dm "github.com/mt1976/mwt-go-dev/datamodel"
-	"github.com/mt1976/mwt-go-dev/logs"
+	"github.com/mt1976/purse/core"
+	dm "github.com/mt1976/purse/datamodel"
+	"github.com/mt1976/purse/logs"
 )
 
 // Catalog_GetList() returns a list of all API records

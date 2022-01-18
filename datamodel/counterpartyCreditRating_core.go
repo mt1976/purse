@@ -6,7 +6,7 @@ package datamodel
 // Package              : application
 // Object 			    : CounterpartyCreditRating (counterpartycreditrating)
 // Endpoint 	        : CounterpartyCreditRating (ID)
-// For Project          : github.com/mt1976/mwt-go-dev/
+// For Project          : github.com/mt1976/purse/
 // ----------------------------------------------------------------
 // Template Generator   : delinquentDysprosium [r4-21.12.31]
 // Date & Time		    : 12/12/2021 at 16:13:09
@@ -15,14 +15,12 @@ package datamodel
 
 //Centre is cheese
 type CounterpartyCreditRating struct {
-
-NameFirm        string
-NameCentre        string
-CreditRatingUsage        string
-CreditRatingAgency        string
-CreditRatingName        string
-CompID        string
-
+	NameFirm           string
+	NameCentre         string
+	CreditRatingUsage  string
+	CreditRatingAgency string
+	CreditRatingName   string
+	CompID             string
 }
 
 const (
@@ -51,12 +49,12 @@ const (
 	///
 	/// SQL Field Definitions
 	///
-	CounterpartyCreditRating_NameFirm   = "NameFirm" // NameFirm is a String
-	CounterpartyCreditRating_NameCentre   = "NameCentre" // NameCentre is a String
-	CounterpartyCreditRating_CreditRatingUsage   = "CreditRatingUsage" // CreditRatingUsage is a String
-	CounterpartyCreditRating_CreditRatingAgency   = "CreditRatingAgency" // CreditRatingAgency is a String
-	CounterpartyCreditRating_CreditRatingName   = "CreditRatingName" // CreditRatingName is a String
-	CounterpartyCreditRating_CompID   = "CompID" // CompID is a String
+	CounterpartyCreditRating_NameFirm           = "NameFirm"           // NameFirm is a String
+	CounterpartyCreditRating_NameCentre         = "NameCentre"         // NameCentre is a String
+	CounterpartyCreditRating_CreditRatingUsage  = "CreditRatingUsage"  // CreditRatingUsage is a String
+	CounterpartyCreditRating_CreditRatingAgency = "CreditRatingAgency" // CreditRatingAgency is a String
+	CounterpartyCreditRating_CreditRatingName   = "CreditRatingName"   // CreditRatingName is a String
+	CounterpartyCreditRating_CompID             = "CompID"             // CompID is a String
 
 	/// Definitions End
 )

@@ -2,8 +2,8 @@ package dao
 
 import (
 	"github.com/google/uuid"
-	core "github.com/mt1976/mwt-go-dev/core"
-	dm "github.com/mt1976/mwt-go-dev/datamodel"
+	core "github.com/mt1976/purse/core"
+	dm "github.com/mt1976/purse/datamodel"
 )
 
 func credentials_NewIDImpl(r dm.Credentials) string {

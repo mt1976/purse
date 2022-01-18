@@ -10,10 +10,10 @@ import (
 
 	"github.com/google/uuid"
 
-	core "github.com/mt1976/mwt-go-dev/core"
-	dao "github.com/mt1976/mwt-go-dev/dao"
-	dm "github.com/mt1976/mwt-go-dev/datamodel"
-	logs "github.com/mt1976/mwt-go-dev/logs"
+	core "github.com/mt1976/purse/core"
+	dao "github.com/mt1976/purse/dao"
+	dm "github.com/mt1976/purse/datamodel"
+	logs "github.com/mt1976/purse/logs"
 )
 
 type sessionToken struct {
