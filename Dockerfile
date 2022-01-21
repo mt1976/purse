@@ -16,7 +16,7 @@ WORKDIR /app
 ## executable of our Go program
 RUN go build -o main .
 # Expose port 5050 to the outside world
-EXPOSE 5050
+EXPOSE 6245
 ## Our start command which kicks off
 ## our newly created binary executable
 CMD ["/app/main"]

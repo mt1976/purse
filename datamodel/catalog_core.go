@@ -9,17 +9,19 @@ package datamodel
 // For Project          : github.com/mt1976/purse/
 // ----------------------------------------------------------------
 // Template Generator   : delinquentDysprosium [r4-21.12.31]
-// Date & Time		    : 12/12/2021 at 16:16:04
+// Date & Time		    : 20/01/2022 at 14:44:35
 // Who & Where		    : matttownsend on silicon.local
 // ----------------------------------------------------------------
 
 //Centre is cheese
 type Catalog struct {
-	ID       string
-	Endpoint string
-	Descr    string
-	Query    string
-	Source   string
+
+ID        string
+Endpoint        string
+Descr        string
+Query        string
+Source        string
+
 }
 
 const (
@@ -48,11 +50,11 @@ const (
 	///
 	/// SQL Field Definitions
 	///
-	Catalog_ID       = "ID"       // ID is a String
-	Catalog_Endpoint = "Endpoint" // Endpoint is a String
-	Catalog_Descr    = "Descr"    // Descr is a String
-	Catalog_Query    = "Query"    // Query is a String
-	Catalog_Source   = "Source"   // Source is a String
+	Catalog_ID   = "ID" // ID is a String
+	Catalog_Endpoint   = "Endpoint" // Endpoint is a String
+	Catalog_Descr   = "Descr" // Descr is a String
+	Catalog_Query   = "Query" // Query is a String
+	Catalog_Source   = "Source" // Source is a String
 
 	/// Definitions End
 )

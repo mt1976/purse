@@ -8,7 +8,7 @@ package dao
 // For Project          : github.com/mt1976/purse/
 // ----------------------------------------------------------------
 // Template Generator   : delinquentDysprosium [r4-21.12.31]
-// Date & Time		    : 18/01/2022 at 15:31:16
+// Date & Time		    : 20/01/2022 at 14:44:39
 // Who & Where		    : matttownsend on silicon.local
 // ----------------------------------------------------------------
 
@@ -86,6 +86,34 @@ func watchlist_Save(r dm.Watchlist,usr string) error {
 
     var err error
 
+// If there are fields below, create the methods in dao\Watchlist_Impl.go
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 	logs.Storing("Watchlist",fmt.Sprintf("%s", r))
 
 	if len(r.Id) == 0 {
@@ -146,7 +174,7 @@ func watchlist_Fetch(tsql string) (int, []dm.Watchlist, dm.Watchlist, error) {
 	for i := 0; i < noitems; i++ {
 
 		rec := returnList[i]
-	// Automatically generated 18/01/2022 by matttownsend on silicon.local - START
+	// Automatically generated 20/01/2022 by matttownsend on silicon.local - START
    recItem.SYSId  = get_Int(rec, dm.Watchlist_SYSId, "0")
    recItem.Id  = get_String(rec, dm.Watchlist_Id, "")
    recItem.Code  = get_String(rec, dm.Watchlist_Code, "")
@@ -185,7 +213,7 @@ func watchlist_Fetch(tsql string) (int, []dm.Watchlist, dm.Watchlist, error) {
 
 
 
-	// Automatically generated 18/01/2022 by matttownsend on silicon.local - END
+	// Automatically generated 20/01/2022 by matttownsend on silicon.local - END
 		//Add to the list
 		recList = append(recList, recItem)
 	}

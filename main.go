@@ -14,6 +14,7 @@ import (
 
 	application "github.com/mt1976/purse/application"
 	core "github.com/mt1976/purse/core"
+	"github.com/mt1976/purse/jobs"
 	scheduler "github.com/mt1976/purse/jobs"
 	logs "github.com/mt1976/purse/logs"
 )
@@ -73,6 +74,30 @@ func main() {
 
 	application.Watchlist_Publish(*mux)
 
+	application.Holding_Publish(*mux)
+
+	application.HoldingType_Publish(*mux)
+
+	application.PortfolioModel_Publish(*mux)
+
+	application.PortfolioType_Publish(*mux)
+
+	application.Portfolio_Publish(*mux)
+
+	application.Symbol_Publish(*mux)
+
+	application.SymbolType_Publish(*mux)
+
+	application.SymbolMetrics_Publish(*mux)
+
+	application.SymbolMetricsHistory_Publish(*mux)
+
+	application.DataSource_Publish(*mux)
+
+	application.ActivityType_Publish(*mux)
+
+	application.Activity_Publish(*mux)
+
 	// End of Endpoints
 
 	logs.Header("Publish API")
@@ -96,6 +121,11 @@ func main() {
 	//spew.Dump(mux)
 
 	//core.Notification_Test()
+
+	jobs.BarchartSTD_Run()
+	jobs.BarchartCrypto_Run()
+	jobs.StaticRates_Run()
+	jobs.MetricsSnapshot_Run()
 
 	logs.Header("READY STEADY GO!!!")
 	logs.Information("Initialisation", "Vrooom, Vrooooom, Vroooooooo..."+logs.Character_Bike+logs.Character_Bike+logs.Character_Bike+logs.Character_Bike)

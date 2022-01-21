@@ -1,0 +1,54 @@
+----------------------------------------------------------------
+Automatically generated  "/design/catalog/holdingtype.nfo"
+----------------------------------------------------------------
+Package              : n/a
+Object 			     : HoldingType (holdingtype)
+Endpoint 	         : HoldingType (Code)
+For Project          : github.com/mt1976/purse/
+----------------------------------------------------------------
+Template Generator   : delinquentDysprosium [r4-21.12.31]
+Date & Time		     : 20/01/2022 at 14:44:36
+Who & Where		     : matttownsend on silicon.local
+----------------------------------------------------------------
+Database Information
+----------------------------------------------------------------
+SQL Table Name       : holdingType
+SQL Table Search Col : Code
+----------------------------------------------------------------
+Fields Generated
+----------------------------------------------------------------
+* Md  = Mandatory
+* Cr  = Core Fields
+* Ex  = Extra Fields
+* Ov  = Override of a Core Field
+* Lkp = Lookup Field
+*-------------------------------------+------------+------------+----+----+----+----+----+-----------------+--------------------------+--------------------------*
+| Field Name                          | Type       | Default    | Md | Cr | Ex | Ov | Lkp| Lkp Object      | Lkp Field Source         | Lkp Value                |  
+*-------------------------------------+------------+------------+----+----+----+----+----+-----------------+--------------------------+--------------------------*
+| SYSId                               | Int        | 0          | Y  | Y  |    |    |    |                 |                          |                          |
+| Code                                | String     |            | Y  | Y  |    |    |    |                 |                          |                          |
+| Name                                | String     |            | Y  | Y  |    |    |    |                 |                          |                          |
+| Factor                              | String     |            | Y  | Y  |    |    |    |                 |                          |                          |
+| SYSCreated                          | String     |            |    | Y  |    |    |    |                 |                          |                          |
+| SYSCreatedBy                        | String     |            |    | Y  |    |    |    |                 |                          |                          |
+| SYSCreatedHost                      | String     |            |    | Y  |    |    |    |                 |                          |                          |
+| SYSUpdated                          | String     |            |    | Y  |    |    |    |                 |                          |                          |
+| SYSUpdatedBy                        | String     |            |    | Y  |    |    |    |                 |                          |                          |
+| SYSUpdatedHost                      | String     |            |    | Y  |    |    |    |                 |                          |                          |
+*-------------------------------------+------------+------------+----+----+----+----+----+-----------------+--------------------------+--------------------------*
+----------------------------------------------------------------
+Artifacts Generated
+----------------------------------------------------------------
+* application (/application/holdingType_core.go)
+* api (/application/holdingType_api.go)
+* dao (/dao/holdingType_core.go)
+* datamodel (/datamodel/holdingType_core.go)
+* menu (/design/menu/holdingType.json)
+* html -> List (/html/HoldingType_List.html)
+* html -> View (/html/HoldingType_View.html)
+* html -> Edit (/html/HoldingType_Edit.html)
+* html -> New (/html/HoldingType_New.html)
+* catalog (/design/catalog/holdingType.nfo)
+----------------------------------------------------------------
+End of File
+----------------------------------------------------------------

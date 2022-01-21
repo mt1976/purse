@@ -1,0 +1,59 @@
+----------------------------------------------------------------
+Automatically generated  "/design/catalog/symbolmetrics.nfo"
+----------------------------------------------------------------
+Package              : n/a
+Object 			     : SymbolMetrics (symbolmetrics)
+Endpoint 	         : SymbolMetrics (Symbol)
+For Project          : github.com/mt1976/purse/
+----------------------------------------------------------------
+Template Generator   : delinquentDysprosium [r4-21.12.31]
+Date & Time		     : 20/01/2022 at 14:44:38
+Who & Where		     : matttownsend on silicon.local
+----------------------------------------------------------------
+Database Information
+----------------------------------------------------------------
+SQL Table Name       : symbolMetrics
+SQL Table Search Col : Symbol
+----------------------------------------------------------------
+Fields Generated
+----------------------------------------------------------------
+* Md  = Mandatory
+* Cr  = Core Fields
+* Ex  = Extra Fields
+* Ov  = Override of a Core Field
+* Lkp = Lookup Field
+*-------------------------------------+------------+------------+----+----+----+----+----+-----------------+--------------------------+--------------------------*
+| Field Name                          | Type       | Default    | Md | Cr | Ex | Ov | Lkp| Lkp Object      | Lkp Field Source         | Lkp Value                |  
+*-------------------------------------+------------+------------+----+----+----+----+----+-----------------+--------------------------+--------------------------*
+| SYSId                               | Int        | 0          | Y  | Y  |    |    |    |                 |                          |                          |
+| Symbol                              | String     |            | Y  | Y  |    |    |    |                 |                          |                          |
+| Price                               | String     |            | Y  | Y  |    |    |    |                 |                          |                          |
+| URI                                 | String     |            | Y  | Y  |    |    |    |                 |                          |                          |
+| SYSCreated                          | String     |            |    | Y  |    |    |    |                 |                          |                          |
+| SYSCreatedBy                        | String     |            |    | Y  |    |    |    |                 |                          |                          |
+| SYSCreatedHost                      | String     |            |    | Y  |    |    |    |                 |                          |                          |
+| SYSUpdated                          | String     |            |    | Y  |    |    |    |                 |                          |                          |
+| SYSUpdatedBy                        | String     |            |    | Y  |    |    |    |                 |                          |                          |
+| SYSUpdatedHost                      | String     |            |    | Y  |    |    |    |                 |                          |                          |
+| Bid                                 | String     |            |    | Y  |    |    |    |                 |                          |                          |
+| Offer                               | String     |            |    | Y  |    |    |    |                 |                          |                          |
+| RawPrice                            | String     |            |    | Y  |    |    |    |                 |                          |                          |
+| RawBid                              | String     |            |    | Y  |    |    |    |                 |                          |                          |
+| RawOffer                            | String     |            |    | Y  |    |    |    |                 |                          |                          |
+*-------------------------------------+------------+------------+----+----+----+----+----+-----------------+--------------------------+--------------------------*
+----------------------------------------------------------------
+Artifacts Generated
+----------------------------------------------------------------
+* application (/application/symbolMetrics_core.go)
+* api (/application/symbolMetrics_api.go)
+* dao (/dao/symbolMetrics_core.go)
+* datamodel (/datamodel/symbolMetrics_core.go)
+* menu (/design/menu/symbolMetrics.json)
+* html -> List (/html/SymbolMetrics_List.html)
+* html -> View (/html/SymbolMetrics_View.html)
+* html -> Edit (/html/SymbolMetrics_Edit.html)
+* html -> New (/html/SymbolMetrics_New.html)
+* catalog (/design/catalog/symbolMetrics.nfo)
+----------------------------------------------------------------
+End of File
+----------------------------------------------------------------

@@ -1,0 +1,137 @@
+{{template "header" .}}
+<body>
+  <div class="container-fluid">
+    <form action="/SymbolMetricsHistoryEdit?TSKey={{.TSKey}}" method="POST" class="form">
+      <div class="card">
+        <div class="card-header font-weight-bold">
+          <div class="row">
+            <div class="col">
+              {{.Title}}&nbsp;:&nbsp;<code>{{.TSKey}}</code>
+            </div>
+            <div class="col">
+              <div class="btn-group float-right">
+              
+                <button type="submit" value="" class="btn btn-warning"><i class="fas fa-pen"  method="POST" formaction="/SymbolMetricsHistoryEdit/?TSKey={{.TSKey}}" onclick="/SymbolMetricsHistoryEdit/?TSKey={{.TSKey}}" title="Edit SymbolMetricsHistory"></i>&nbsp;&nbsp;Edit</button>
+                
+                <button id="print" type="button" class="btn btn-info" onclick="window.print()" title="Print SymbolMetricsHistory"><i class="fas fa-print"></i></i>&nbsp;&nbsp;Print</button>
+                <button type="button" value="" class="btn btn-outline-secondary" onclick="history.back()" title="Back"><i class="fas fa-times" ></i>&nbsp;&nbsp;Cancel</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card-body">
+            <div class="row">
+              <div class="col-sm">
+                <label for="SYSId">SYSId</label>
+                <input type="text" class="form-control" id="SYSId" aria-describedby="SYSIdHelp" placeholder="0" disabled="disabled" value="{{.SYSId}}">
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-sm">
+                <label for="TSKey">TSKey</label>
+                <input type="text" class="form-control" id="TSKey" aria-describedby="TSKeyHelp" placeholder="" disabled="disabled" value="{{.TSKey}}">
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-sm">
+                <label for="Symbol">Symbol</label>
+                <input type="text" class="form-control" id="Symbol" aria-describedby="SymbolHelp" placeholder="" disabled="disabled" value="{{.Symbol}}">
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-sm">
+                <label for="Date">Date</label>
+                <input type="text" class="form-control" id="Date" aria-describedby="DateHelp" placeholder="" disabled="disabled" value="{{.Date}}">
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-sm">
+                <label for="Price">Price</label>
+                <input type="text" class="form-control" id="Price" aria-describedby="PriceHelp" placeholder="" disabled="disabled" value="{{.Price}}">
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-sm">
+                <label for="URI">URI</label>
+                <input type="text" class="form-control" id="URI" aria-describedby="URIHelp" placeholder="" disabled="disabled" value="{{.URI}}">
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-sm">
+                <label for="SYSCreated">SYSCreated</label>
+                <input type="text" class="form-control" id="SYSCreated" aria-describedby="SYSCreatedHelp" placeholder="" disabled="disabled" value="{{.SYSCreated}}">
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-sm">
+                <label for="SYSCreatedBy">SYSCreatedBy</label>
+                <input type="text" class="form-control" id="SYSCreatedBy" aria-describedby="SYSCreatedByHelp" placeholder="" disabled="disabled" value="{{.SYSCreatedBy}}">
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-sm">
+                <label for="SYSCreatedHost">SYSCreatedHost</label>
+                <input type="text" class="form-control" id="SYSCreatedHost" aria-describedby="SYSCreatedHostHelp" placeholder="" disabled="disabled" value="{{.SYSCreatedHost}}">
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-sm">
+                <label for="SYSUpdated">SYSUpdated</label>
+                <input type="text" class="form-control" id="SYSUpdated" aria-describedby="SYSUpdatedHelp" placeholder="" disabled="disabled" value="{{.SYSUpdated}}">
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-sm">
+                <label for="SYSUpdatedBy">SYSUpdatedBy</label>
+                <input type="text" class="form-control" id="SYSUpdatedBy" aria-describedby="SYSUpdatedByHelp" placeholder="" disabled="disabled" value="{{.SYSUpdatedBy}}">
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-sm">
+                <label for="SYSUpdatedHost">SYSUpdatedHost</label>
+                <input type="text" class="form-control" id="SYSUpdatedHost" aria-describedby="SYSUpdatedHostHelp" placeholder="" disabled="disabled" value="{{.SYSUpdatedHost}}">
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-sm">
+                <label for="Type">Type</label>
+                <input type="text" class="form-control" id="Type" aria-describedby="TypeHelp" placeholder="" disabled="disabled" value="{{.Type}}">
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-sm">
+                <label for="Bid">Bid</label>
+                <input type="text" class="form-control" id="Bid" aria-describedby="BidHelp" placeholder="" disabled="disabled" value="{{.Bid}}">
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-sm">
+                <label for="Offer">Offer</label>
+                <input type="text" class="form-control" id="Offer" aria-describedby="OfferHelp" placeholder="" disabled="disabled" value="{{.Offer}}">
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-sm">
+                <label for="RawPrice">RawPrice</label>
+                <input type="text" class="form-control" id="RawPrice" aria-describedby="RawPriceHelp" placeholder="" disabled="disabled" value="{{.RawPrice}}">
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-sm">
+                <label for="RawBid">RawBid</label>
+                <input type="text" class="form-control" id="RawBid" aria-describedby="RawBidHelp" placeholder="" disabled="disabled" value="{{.RawBid}}">
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-sm">
+                <label for="RawOffer">RawOffer</label>
+                <input type="text" class="form-control" id="RawOffer" aria-describedby="RawOfferHelp" placeholder="" disabled="disabled" value="{{.RawOffer}}">
+              </div>
+            </div>
+        </div>
+{{template "audit" .}}
+      </div>
+    </form>
+  </div>
+{{template "footer" .}}
+</body>

@@ -9,29 +9,35 @@ package datamodel
 // For Project          : github.com/mt1976/purse/
 // ----------------------------------------------------------------
 // Template Generator   : delinquentDysprosium [r4-21.12.31]
-// Date & Time		    : 12/12/2021 at 16:13:17
+// Date & Time		    : 20/01/2022 at 14:44:36
 // Who & Where		    : matttownsend on silicon.local
 // ----------------------------------------------------------------
 
 //Centre is cheese
 type Portfolio struct {
-	Code                 string
-	Description1         string
-	Description2         string
-	IsDefault            string
-	InternalId           string
-	InternalDeleted      string
-	UpdatedTransactionId string
-	UpdatedUserId        string
-	UpdatedDateTime      string
-	DeletedTransactionId string
-	DeletedUserId        string
-	ChangeType           string
+
+SYSId        string
+Code        string
+Name        string
+Type        string
+DefaultModel        string
+Description        string
+SYSCreated        string
+SYSCreatedBy        string
+SYSCreatedHost        string
+SYSUpdated        string
+SYSUpdatedBy        string
+SYSUpdatedHost        string
+Type_Lookup        string
+DefaultModel_Lookup        string
+
+
+
 }
 
 const (
-	Portfolio_Title       = "Bank Porfolio"
-	Portfolio_SQLTable    = "sienaPortfolio"
+	Portfolio_Title       = "Portfolio"
+	Portfolio_SQLTable    = "portfolio"
 	Portfolio_SQLSearchID = "Code"
 	Portfolio_QueryString = "Code"
 	///
@@ -55,18 +61,22 @@ const (
 	///
 	/// SQL Field Definitions
 	///
-	Portfolio_Code                 = "Code"                 // Code is a String
-	Portfolio_Description1         = "Description1"         // Description1 is a String
-	Portfolio_Description2         = "Description2"         // Description2 is a String
-	Portfolio_IsDefault            = "isDefault"            // IsDefault is a Bool
-	Portfolio_InternalId           = "InternalId"           // InternalId is a Int
-	Portfolio_InternalDeleted      = "InternalDeleted"      // InternalDeleted is a Time
-	Portfolio_UpdatedTransactionId = "UpdatedTransactionId" // UpdatedTransactionId is a String
-	Portfolio_UpdatedUserId        = "UpdatedUserId"        // UpdatedUserId is a String
-	Portfolio_UpdatedDateTime      = "UpdatedDateTime"      // UpdatedDateTime is a Time
-	Portfolio_DeletedTransactionId = "DeletedTransactionId" // DeletedTransactionId is a String
-	Portfolio_DeletedUserId        = "DeletedUserId"        // DeletedUserId is a String
-	Portfolio_ChangeType           = "ChangeType"           // ChangeType is a String
+	Portfolio_SYSId   = "_id" // SYSId is a Int
+	Portfolio_Code   = "Code" // Code is a String
+	Portfolio_Name   = "Name" // Name is a String
+	Portfolio_Type   = "Type" // Type is a String
+	Portfolio_DefaultModel   = "DefaultModel" // DefaultModel is a String
+	Portfolio_Description   = "Description" // Description is a String
+	Portfolio_SYSCreated   = "_created" // SYSCreated is a String
+	Portfolio_SYSCreatedBy   = "_createdBy" // SYSCreatedBy is a String
+	Portfolio_SYSCreatedHost   = "_createdHost" // SYSCreatedHost is a String
+	Portfolio_SYSUpdated   = "_updated" // SYSUpdated is a String
+	Portfolio_SYSUpdatedBy   = "_updatedBy" // SYSUpdatedBy is a String
+	Portfolio_SYSUpdatedHost   = "_updatedHost" // SYSUpdatedHost is a String
+	Portfolio_Type_Lookup   = "Type_Lookup" // Type_Lookup is a String
+	Portfolio_DefaultModel_Lookup   = "DefaultModel_Lookup" // DefaultModel_Lookup is a String
+
+
 
 	/// Definitions End
 )

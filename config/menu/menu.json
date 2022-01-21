@@ -11,12 +11,139 @@
 
 
         {
+            "ID": "0d33101f-54ed-4031-a264-42f5b0581693",
+            "Text": "Symbol",
+            "Glyph": "fas fa-crosshairs",
+            "HREF": "/SymbolList",
+            "OnClick": "",
+            "TextClass": ""
+        },
+
+
+        {
             "ID": "40733ba0-0078-47d5-88ae-670e85da19b6",
             "Text": "Watchlist",
-            "Glyph": "fas fa-list-ul",
+            "Glyph": "fas fa-eye",
             "HREF": "/WatchlistList",
             "OnClick": "",
+            "TextClass": ""
+        },
+
+
+
+        {
+            "ID": "ef592260-210f-49e2-84f1-c8ce2705b8bb",
+            "Text": "Portfolio",
+            "Glyph": "fas fa-briefcase",
+            "HREF": "/PortfolioList",
+            "OnClick": "",
+            "TextClass": ""
+        },
+        {
+            "ID": "238220ad-be36-442d-96d8-d5e9aaf4965f",
+            "Text": "Activity",
+            "Glyph": "far fa-handshake",
+            "HREF": "/ActivityList",
+            "OnClick": "",
             "TextClass": "text-info"
+        },
+
+        {
+            "ID": "7c86c897-309d-4c50-8b2c-28813a28b35f",
+            "Text": "Holding",
+            "Glyph": "fas fa-hand-holding-usd",
+            "HREF": "/HoldingList",
+            "OnClick": "",
+            "TextClass": ""
+        },
+
+
+        {
+            "Break": "<hr class=\"hr-list\">"
+        },
+
+        {
+            "ID": "d147c6b1-981c-4521-83a4-77bbfc3fb563",
+            "Text": "PortfolioModel",
+            "Glyph": "fas fa-cube",
+            "HREF": "/PortfolioModelList",
+            "OnClick": "",
+            "TextClass": ""
+        },
+
+        {
+            "Break": "<hr class=\"hr-list\">"
+        },
+
+
+        {
+            "ID": "b27ef60b-a550-43d8-828e-8b2635664d63",
+            "Text": "SymbolMetrics",
+            "Glyph": "fas fa-money-bill-alt",
+            "HREF": "/SymbolMetricsList",
+            "OnClick": "",
+            "TextClass": ""
+        },
+
+
+
+
+        {
+            "ID": "1a502237-20ce-4c96-9489-89fafe8278fe",
+            "Text": "SymbolMetricsHistory",
+            "Glyph": "fas fa-history",
+            "HREF": "/SymbolMetricsHistoryList",
+            "OnClick": "",
+            "TextClass": ""
+        },
+
+
+        {
+            "Break": "<hr class=\"hr-list\">"
+        },
+        {
+            "ID": "a9581184-0304-461e-8cd3-1ec9251bacfd",
+            "Text": "SymbolType",
+            "Glyph": "fas fa-wrench",
+            "HREF": "/SymbolTypeList",
+            "OnClick": "",
+            "TextClass": ""
+        },
+        {
+            "ID": "e20f25a5-aa0a-4c6e-a3f1-303735f95091",
+            "Text": "ActivityType",
+            "Glyph": "fas fa-wrench",
+            "HREF": "/ActivityTypeList",
+            "OnClick": "",
+            "TextClass": "text-info"
+        },
+
+        {
+            "ID": "cd8f8697-06c4-47e6-a3c6-054ff3eedfc0",
+            "Text": "HoldingType",
+            "Glyph": "fas fa-wrench",
+            "HREF": "/HoldingTypeList",
+            "OnClick": "",
+            "TextClass": ""
+        },
+
+
+        {
+            "ID": "7db5f5ad-09f6-4347-a117-0f12a9bc5197",
+            "Text": "PortfolioType",
+            "Glyph": "fas fa-wrench",
+            "HREF": "/PortfolioTypeList",
+            "OnClick": "",
+            "TextClass": ""
+        },
+
+        {
+            "ID": "60b907bf-e4bd-4982-8bec-67de0166b03a",
+            "Text": "DataSource",
+            "Glyph": "fas fa-plug",
+            "HREF": "/DataSourceList",
+            "OnClick": "",
+            "TextClass": ""
         },
 
         {
@@ -38,7 +165,7 @@
             "Glyph": "fas fa-history",
             "HREF": "/SessionList",
             "OnClick": "",
-            "TextClass": "text-info"
+            "TextClass": ""
         },
 
         {
@@ -47,7 +174,7 @@
             "Glyph": "far fa-clock",
             "HREF": "/ScheduleList",
             "OnClick": "",
-            "TextClass": "text-info"
+            "TextClass": ""
         },
 
         {
@@ -84,7 +211,7 @@
             "Glyph": "fa fa-question-circle",
             "HREF": "/viewAppConfiguration",
             "OnClick": "",
-            "TextClass": "text-info"
+            "TextClass": ""
         },
 
 

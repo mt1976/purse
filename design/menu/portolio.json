@@ -1,0 +1,8 @@
+{
+    "ID": "ef592260-210f-49e2-84f1-c8ce2705b8bb",
+    "Text": "Portfolio",
+    "Glyph": "fas fa-briefcase",
+    "HREF": "/PortolioList",
+    "OnClick": "",
+    "TextClass": "text-info"
+},

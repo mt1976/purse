@@ -1,17 +1,17 @@
 {{template "header" .}}
 <body>
   <div class="container-fluid">
-    <form action="/TemplateSave?TemplateID={{.ID}}" method="GET" class="form">
+    <form action="/TemplateSave/" method="GET" class="form">
       <div class="card">
         <div class="card-header font-weight-bold">
           <div class="row">
             <div class="col">
-              {{.Title}}&nbsp;:&nbsp;<code>{{.ID}}</code>
+              {{.Title}}&nbsp;:&nbsp;<code>NEW</code>
             </div>
             <div class="col">
               <div class="btn-group float-right">
               
-                <button type="submit" value="" class="btn btn-danger"><i class="fas fa-save"  method="GET" formaction="/TemplateSave&TemplateID={{.ID}}" onclick="/TemplateSave/?TemplateID={{.ID}}" title="Save Template Contents"></i>&nbsp;&nbsp;Save</button>
+                <button type="submit" value="" class="btn btn-danger"><i class="fas fa-save"  method="GET" formaction="/TemplateSave/" onclick="/TemplateSave/" title="Save Template Contents"></i>&nbsp;&nbsp;Save</button>
               
                 <button id="print" type="button" class="btn btn-info" onclick="window.print()" title="Print Template Contents"><i class="fas fa-print"></i></i>&nbsp;&nbsp;Print</button>
                 <button type="button" value="" class="btn btn-outline-secondary" onclick="history.back()" title="Back"><i class="fas fa-times" ></i>&nbsp;&nbsp;Cancel</button>
@@ -23,7 +23,7 @@
             <div class="row">
               <div class="col-sm">
                 <label for="SYSId" hidden>SYSId</label>
-                <input type="text" class="form-control" id="SYSId" name="SYSId" aria-describedby="SYSIdHelp" placeholder="0" hidden value="{{.SYSId}}" required>
+                <input type="text" class="form-control" id="SYSId" name="SYSId" aria-describedby="SYSIdHelp" placeholder="0" hidden value="new" required>
               </div>
             </div>
             <div class="row">

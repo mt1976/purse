@@ -46,6 +46,7 @@ const (
 	DATEFORMATYMD            = "20060102"
 	DATEFORMATUSER           = "02/01/2006"
 	DATETIME                 = "2006-01-02T15:04:05.999999"
+	DATETIMEUNQ              = "20060102150405.999999"
 	DFDD                     = "02"
 	DFMM                     = "01"
 	DFYY                     = "06"

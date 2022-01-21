@@ -9,24 +9,27 @@ package datamodel
 // For Project          : github.com/mt1976/purse/
 // ----------------------------------------------------------------
 // Template Generator   : delinquentDysprosium [r4-21.12.31]
-// Date & Time		    : 12/12/2021 at 16:13:20
+// Date & Time		    : 20/01/2022 at 14:44:38
 // Who & Where		    : matttownsend on silicon.local
 // ----------------------------------------------------------------
 
 //Centre is cheese
 type Template struct {
-	SYSId             string
-	FIELD1            string
-	FIELD2            string
-	SYSCreated        string
-	SYSCreatedBy      string
-	SYSCreatedHost    string
-	SYSUpdated        string
-	SYSUpdatedHost    string
-	SYSUpdatedBy      string
-	ID                string
-	ExtraField_Extra  string
-	ExtraField2_Extra string
+
+SYSId        string
+FIELD1        string
+FIELD2        string
+SYSCreated        string
+SYSCreatedBy        string
+SYSCreatedHost        string
+SYSUpdated        string
+SYSUpdatedHost        string
+SYSUpdatedBy        string
+ID        string
+ExtraField_Extra        string
+ExtraField2_Extra        string
+
+
 }
 
 const (
@@ -55,18 +58,19 @@ const (
 	///
 	/// SQL Field Definitions
 	///
-	Template_SYSId             = "_id"               // SYSId is a Int
-	Template_FIELD1            = "FIELD1"            // FIELD1 is a String
-	Template_FIELD2            = "FIELD2"            // FIELD2 is a String
-	Template_SYSCreated        = "_created"          // SYSCreated is a String
-	Template_SYSCreatedBy      = "_createdBy"        // SYSCreatedBy is a String
-	Template_SYSCreatedHost    = "_createdHost"      // SYSCreatedHost is a String
-	Template_SYSUpdated        = "_updated"          // SYSUpdated is a String
-	Template_SYSUpdatedHost    = "_updatedHost"      // SYSUpdatedHost is a String
-	Template_SYSUpdatedBy      = "_updatedBy"        // SYSUpdatedBy is a String
-	Template_ID                = "ID"                // ID is a String
-	Template_ExtraField_Extra  = "ExtraField_Extra"  // ExtraField_Extra is a String
-	Template_ExtraField2_Extra = "ExtraField2_Extra" // ExtraField2_Extra is a String
+	Template_SYSId   = "_id" // SYSId is a Int
+	Template_FIELD1   = "FIELD1" // FIELD1 is a String
+	Template_FIELD2   = "FIELD2" // FIELD2 is a String
+	Template_SYSCreated   = "_created" // SYSCreated is a String
+	Template_SYSCreatedBy   = "_createdBy" // SYSCreatedBy is a String
+	Template_SYSCreatedHost   = "_createdHost" // SYSCreatedHost is a String
+	Template_SYSUpdated   = "_updated" // SYSUpdated is a String
+	Template_SYSUpdatedHost   = "_updatedHost" // SYSUpdatedHost is a String
+	Template_SYSUpdatedBy   = "_updatedBy" // SYSUpdatedBy is a String
+	Template_ID   = "ID" // ID is a String
+	Template_ExtraField_Extra   = "ExtraField_Extra" // ExtraField_Extra is a String
+	Template_ExtraField2_Extra   = "ExtraField2_Extra" // ExtraField2_Extra is a String
+
 
 	/// Definitions End
 )

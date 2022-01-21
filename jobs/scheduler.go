@@ -37,6 +37,11 @@ func Start() {
 
 	SessionHouseKeeping_Register(c)
 
+	BarchartSTD_Register(c)
+	BarchartCrypto_Register(c)
+	StaticRates_Register(c)
+	MetricsSnapshot_Register(c)
+
 	c.Start()
 	//fmt.Println(len(c.Entries()))
 	//for i, e := range c.Entries() {

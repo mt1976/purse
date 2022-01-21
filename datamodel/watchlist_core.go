@@ -9,7 +9,7 @@ package datamodel
 // For Project          : github.com/mt1976/purse/
 // ----------------------------------------------------------------
 // Template Generator   : delinquentDysprosium [r4-21.12.31]
-// Date & Time		    : 18/01/2022 at 15:31:16
+// Date & Time		    : 20/01/2022 at 14:44:39
 // Who & Where		    : matttownsend on silicon.local
 // ----------------------------------------------------------------
 

@@ -8,7 +8,7 @@ package application
 // For Project          : github.com/mt1976/purse/
 // ----------------------------------------------------------------
 // Template Generator   : delinquentDysprosium [r4-21.12.31]
-// Date & Time		    : 18/01/2022 at 15:31:16
+// Date & Time		    : 20/01/2022 at 14:44:39
 // Who & Where		    : matttownsend on silicon.local
 // ----------------------------------------------------------------
 
@@ -40,7 +40,7 @@ type Watchlist_Page struct {
 	UserRole    	 string
 	Title       	 string
 	PageTitle   	 string
-	// Automatically generated 18/01/2022 by matttownsend on silicon.local - START
+	// Automatically generated 20/01/2022 by matttownsend on silicon.local - START
 		SYSId string
 		Id string
 		Code string
@@ -67,7 +67,7 @@ type Watchlist_Page struct {
 	
 	
 	
-	// Automatically generated 18/01/2022 by matttownsend on silicon.local - END
+	// Automatically generated 20/01/2022 by matttownsend on silicon.local - END
 }
 
 const (
@@ -140,7 +140,7 @@ func Watchlist_HandlerView(w http.ResponseWriter, r *http.Request) {
 	}
 
 		// 
-		// Automatically generated 18/01/2022 by matttownsend on silicon.local - START
+		// Automatically generated 20/01/2022 by matttownsend on silicon.local - START
 pageDetail.SYSId = rD.SYSId
 pageDetail.Id = rD.Id
 pageDetail.Code = rD.Code
@@ -155,12 +155,12 @@ pageDetail.SYSUpdatedBy = rD.SYSUpdatedBy
 pageDetail.SYSUpdatedHost = rD.SYSUpdatedHost
 
 
-// Automatically generated 18/01/2022 by matttownsend on silicon.local - Enrichment Fields Below
-// Automatically generated 18/01/2022 by matttownsend on silicon.local - END
+// Automatically generated 20/01/2022 by matttownsend on silicon.local - Enrichment Fields Below
+// Automatically generated 20/01/2022 by matttownsend on silicon.local - END
 		//
 
 
-	// Automatically generated 18/01/2022 by matttownsend on silicon.local - END
+	// Automatically generated 20/01/2022 by matttownsend on silicon.local - END
 
 	pageDetail.SessionInfo, _ = Session_GetSessionInfo(r)
 
@@ -191,7 +191,7 @@ func Watchlist_HandlerEdit(w http.ResponseWriter, r *http.Request) {
 	}
 
 		// 
-		// Automatically generated 18/01/2022 by matttownsend on silicon.local - START
+		// Automatically generated 20/01/2022 by matttownsend on silicon.local - START
 pageDetail.SYSId = rD.SYSId
 pageDetail.Id = rD.Id
 pageDetail.Code = rD.Code
@@ -206,10 +206,10 @@ pageDetail.SYSUpdatedBy = rD.SYSUpdatedBy
 pageDetail.SYSUpdatedHost = rD.SYSUpdatedHost
 
 
-// Automatically generated 18/01/2022 by matttownsend on silicon.local - Enrichment Fields Below
-// Automatically generated 18/01/2022 by matttownsend on silicon.local - END
+// Automatically generated 20/01/2022 by matttownsend on silicon.local - Enrichment Fields Below
+// Automatically generated 20/01/2022 by matttownsend on silicon.local - END
 
-	// Automatically generated 18/01/2022 by matttownsend on silicon.local - END
+	// Automatically generated 20/01/2022 by matttownsend on silicon.local - END
 
 	pageDetail.SessionInfo, _ = Session_GetSessionInfo(r)
 
@@ -231,7 +231,7 @@ func Watchlist_HandlerSave(w http.ResponseWriter, r *http.Request) {
 	logs.Servicing(r.URL.Path+r.FormValue("Id"))
 
 	var item dm.Watchlist
-	// Automatically generated 18/01/2022 by matttownsend on silicon.local - START
+	// Automatically generated 20/01/2022 by matttownsend on silicon.local - START
 		item.SYSId = r.FormValue(dm.Watchlist_SYSId)
 		item.Id = r.FormValue(dm.Watchlist_Id)
 		item.Code = r.FormValue(dm.Watchlist_Code)
@@ -246,7 +246,7 @@ func Watchlist_HandlerSave(w http.ResponseWriter, r *http.Request) {
 		item.SYSUpdatedHost = r.FormValue(dm.Watchlist_SYSUpdatedHost)
 	
 
-	// Automatically generated 18/01/2022 by matttownsend on silicon.local - END
+	// Automatically generated 20/01/2022 by matttownsend on silicon.local - END
 
 	dao.Watchlist_Store(item,r)	
 
@@ -274,7 +274,7 @@ func Watchlist_HandlerNew(w http.ResponseWriter, r *http.Request) {
 	}
 
 		// 
-		// Automatically generated 18/01/2022 by matttownsend on silicon.local - START
+		// Automatically generated 20/01/2022 by matttownsend on silicon.local - START
 pageDetail.SYSId = ""
 pageDetail.Id = ""
 pageDetail.Code = ""
@@ -289,8 +289,8 @@ pageDetail.SYSUpdatedBy = ""
 pageDetail.SYSUpdatedHost = ""
 
 
-// Automatically generated 18/01/2022 by matttownsend on silicon.local - Enrichment Fields Below
-// Automatically generated 18/01/2022 by matttownsend on silicon.local - END
+// Automatically generated 20/01/2022 by matttownsend on silicon.local - Enrichment Fields Below
+// Automatically generated 20/01/2022 by matttownsend on silicon.local - END
 		//
 
 	pageDetail.SessionInfo, _ = Session_GetSessionInfo(r)

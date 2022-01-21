@@ -1,0 +1,62 @@
+----------------------------------------------------------------
+Automatically generated  "/design/catalog/symbolmetricshistory.nfo"
+----------------------------------------------------------------
+Package              : n/a
+Object 			     : SymbolMetricsHistory (symbolmetricshistory)
+Endpoint 	         : SymbolMetricsHistory (TSKey)
+For Project          : github.com/mt1976/purse/
+----------------------------------------------------------------
+Template Generator   : delinquentDysprosium [r4-21.12.31]
+Date & Time		     : 20/01/2022 at 14:44:38
+Who & Where		     : matttownsend on silicon.local
+----------------------------------------------------------------
+Database Information
+----------------------------------------------------------------
+SQL Table Name       : symbolMetricsHistory
+SQL Table Search Col : TSKey
+----------------------------------------------------------------
+Fields Generated
+----------------------------------------------------------------
+* Md  = Mandatory
+* Cr  = Core Fields
+* Ex  = Extra Fields
+* Ov  = Override of a Core Field
+* Lkp = Lookup Field
+*-------------------------------------+------------+------------+----+----+----+----+----+-----------------+--------------------------+--------------------------*
+| Field Name                          | Type       | Default    | Md | Cr | Ex | Ov | Lkp| Lkp Object      | Lkp Field Source         | Lkp Value                |  
+*-------------------------------------+------------+------------+----+----+----+----+----+-----------------+--------------------------+--------------------------*
+| SYSId                               | Int        | 0          | Y  | Y  |    |    |    |                 |                          |                          |
+| TSKey                               | String     |            | Y  | Y  |    |    |    |                 |                          |                          |
+| Symbol                              | String     |            | Y  | Y  |    |    |    |                 |                          |                          |
+| Date                                | String     |            | Y  | Y  |    |    |    |                 |                          |                          |
+| Price                               | String     |            | Y  | Y  |    |    |    |                 |                          |                          |
+| URI                                 | String     |            | Y  | Y  |    |    |    |                 |                          |                          |
+| SYSCreated                          | String     |            |    | Y  |    |    |    |                 |                          |                          |
+| SYSCreatedBy                        | String     |            |    | Y  |    |    |    |                 |                          |                          |
+| SYSCreatedHost                      | String     |            |    | Y  |    |    |    |                 |                          |                          |
+| SYSUpdated                          | String     |            |    | Y  |    |    |    |                 |                          |                          |
+| SYSUpdatedBy                        | String     |            |    | Y  |    |    |    |                 |                          |                          |
+| SYSUpdatedHost                      | String     |            |    | Y  |    |    |    |                 |                          |                          |
+| Type                                | String     |            |    | Y  |    |    |    |                 |                          |                          |
+| Bid                                 | String     |            |    | Y  |    |    |    |                 |                          |                          |
+| Offer                               | String     |            |    | Y  |    |    |    |                 |                          |                          |
+| RawPrice                            | String     |            |    | Y  |    |    |    |                 |                          |                          |
+| RawBid                              | String     |            |    | Y  |    |    |    |                 |                          |                          |
+| RawOffer                            | String     |            |    | Y  |    |    |    |                 |                          |                          |
+*-------------------------------------+------------+------------+----+----+----+----+----+-----------------+--------------------------+--------------------------*
+----------------------------------------------------------------
+Artifacts Generated
+----------------------------------------------------------------
+* application (/application/symbolMetricsHistory_core.go)
+* api (/application/symbolMetricsHistory_api.go)
+* dao (/dao/symbolMetricsHistory_core.go)
+* datamodel (/datamodel/symbolMetricsHistory_core.go)
+* menu (/design/menu/symbolMetricsHistory.json)
+* html -> List (/html/SymbolMetricsHistory_List.html)
+* html -> View (/html/SymbolMetricsHistory_View.html)
+* html -> Edit (/html/SymbolMetricsHistory_Edit.html)
+* html -> New (/html/SymbolMetricsHistory_New.html)
+* catalog (/design/catalog/symbolMetricsHistory.nfo)
+----------------------------------------------------------------
+End of File
+----------------------------------------------------------------

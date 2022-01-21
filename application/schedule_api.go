@@ -9,7 +9,7 @@ package application
 // For Project          : github.com/mt1976/purse/
 // ----------------------------------------------------------------
 // Template Generator   : delinquentDysprosium [r4-21.12.31]
-// Date & Time		    : 14/12/2021 at 09:54:35
+// Date & Time		    : 20/01/2022 at 14:44:37
 // Who & Where		    : matttownsend on silicon.local
 // ----------------------------------------------------------------
 
@@ -18,9 +18,10 @@ import (
 
 	"net/http"
 
-	core "github.com/mt1976/purse/core"
-	dao "github.com/mt1976/purse/dao"
-	dm "github.com/mt1976/purse/datamodel"
+
+	core    "github.com/mt1976/purse/core"
+	dao     "github.com/mt1976/purse/dao"
+	dm      "github.com/mt1976/purse/datamodel"
 )
 
 //Schedule_Handler is the handler for the api calls
@@ -33,7 +34,7 @@ func Schedule_Handler(w http.ResponseWriter, r *http.Request) {
 	//     delete => DELETE
 
 	httpMethod := r.Method
-
+	
 	inUTL := r.URL.Path
 	w.Header().Set("Content-Type", "text/html")
 	core.ServiceMessage(inUTL)
@@ -72,8 +73,8 @@ func schedule_MethodGet(w http.ResponseWriter, r *http.Request) {
 		ci.Count = noRecs
 		ci.Key = dm.Schedule_QueryString
 		for _, v := range records {
-			ciContent := core.ContentListItem{ID: v.Id, Query: "?" + ci.Key + "=" + v.Id}
-			ci.Items = append(ci.Items, ciContent)
+			ciContent := core.ContentListItem{ID:v.Id,Query:"?" + ci.Key +"="+ v.Id}
+			ci.Items= append(ci.Items, ciContent)
 		}
 		json_data, _ := json.Marshal(ci)
 		w.Write(json_data)
@@ -84,6 +85,7 @@ func schedule_MethodGet(w http.ResponseWriter, r *http.Request) {
 			w.WriteHeader(int(http.StatusOK))
 		}
 
+
 	} else {
 		//Get a specific entity
 		_, record, _ := dao.Schedule_GetByID(searchID)
@@ -92,11 +94,12 @@ func schedule_MethodGet(w http.ResponseWriter, r *http.Request) {
 		w.Write(json_data)
 
 		if record.Id == "" {
-			w.WriteHeader(int(http.StatusNotFound))
+		    w.WriteHeader(int(http.StatusNotFound))
 		} else {
 			w.WriteHeader(int(http.StatusOK))
 		}
 	}
+
 
 }
 
@@ -109,8 +112,8 @@ func schedule_MethodPost(w http.ResponseWriter, r *http.Request) {
 	var t dm.Schedule
 	err := decoder.Decode(&t)
 	if err != nil {
-		panic(err)
 		w.WriteHeader(int(http.StatusNotFound))
+		panic(err)
 	} else {
 		w.WriteHeader(int(http.StatusOK))
 	}
@@ -126,7 +129,6 @@ func schedule_MethodPost(w http.ResponseWriter, r *http.Request) {
 	}
 	//logs.Success("POST")
 }
-
 //Handles DELETE requests for Schedule
 func schedule_MethodDelete(w http.ResponseWriter, r *http.Request) {
 	//logs.Processing("DELETE")

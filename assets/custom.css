@@ -1,9 +1,9 @@
 /* bootstrap.min.css */
 
 :root {
-    --custom-primary-colour: #322a77;
+    --custom-primary-colour: #2C001E;
     --custom-primary-rgb: 50, 42, 119;
-    --custom-secondary-colour: #666666;
+    --custom-secondary-colour: #77216F;
     --custom-primary-light: #FFFFFF;
     --custom-primary-light-rgb: 255, 255, 255;
     --custom-primary-dark: #221D53;
@@ -11,7 +11,7 @@
     --custom-code-colour: #77216F;
     --custom-grey: #dedede;
     --custom-placeholder: #757575c9;
-    --custom-tertiary: #34e1eb;
+    --custom-tertiary: #E95420;
     --custom-primary-hover: #aaa;
     --custom-primary-border: #d9d7f1;
     --custom-text: #484848;
@@ -21,7 +21,7 @@
     --custom-alert: #FF2600;
     --custom-ok: #007F00;
     --custom-background-rgb: 255, 255, 255;
-    --custom-background: #FFFFFF;
+    --custom-background: #F6F6F5;
     --custom-light-grey: #d3d3d3;
     --custom-dark-grey: #404040;
     --custom-audit-text: #b4b4b4;
